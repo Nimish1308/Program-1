@@ -1,0 +1,266 @@
+body::-webkit-scrollbar
+{
+    display: none;
+}
+
+/*Body Section*/
+
+
+/*<!--Border-Image Property-->*/
+div
+{
+    width: 400px;
+    height: 100px;
+    border: 20px solid black;
+   
+   
+}
+
+.d1
+{
+    border-image: url("./icons/icon.png");
+}
+
+.d2
+{
+    border-image: url("./icons/icon.png");
+    border-image-slice: 28 ;
+}
+
+.d3
+{
+    border-image: url("./icons/icon.png");
+    border-image-slice: 28 ;
+    border-image-repeat: repeat;
+}
+
+.d4
+{
+    border-image: url("./icons/icon.png");
+    border-image-slice: 28 ;
+    border-image-repeat:stretch;
+}
+
+.d5
+{
+    border-image: url("./icons/icon.png");
+    border-image-slice: 28 ;
+    border-image-repeat:round;
+}
+.d6
+{
+    border-image: url("./icons/icon.png");
+    border-image-slice: 28 ;
+    border-image-repeat:space;
+}
+
+.d7
+{
+    border-image: url("./icons/icon.png");
+    border-image-slice: 28 ;
+    border-image-repeat: stretch round;
+    float: left;
+}
+
+.d8
+{
+    border-image: url("./icons/icon.png");
+    border-image-slice: 28 15;
+    border-image-repeat: round;
+    float: left;
+    margin-left: 15px;
+}
+
+
+.d9
+{
+    border-image: url("./icons/icon.png");
+    border-image-slice: 16;
+    border-image-repeat: round stretch;
+    float: left;
+    margin-left: 15px;
+    
+}
+
+.d10
+{
+    border-image: url("./icons/icon.png");
+    border-image-slice: 16;
+    border-image-repeat: round stretch;
+    border-image-outset: 2;
+    margin-left:255px;
+}
+/*<!--Border-Image Property-->*/
+
+/*<!--Multiple Backgrounds-->*/
+.b1
+{
+    background-image: url("./icons/f1.png"),url("./icons/f3.jpg");
+    background-position: left center,left top;
+    background-repeat: no-repeat,repeat;
+    width:90%;
+    height: 390px;
+    margin: 40px;
+    border:hidden;
+}
+
+.b2
+{
+    background-image: url(./icons/f1.png);
+    background-repeat: no-repeat;
+    background-size: 100px 80px;
+    border: 1px solid black;
+    width: 800px;
+    height: 290px;
+    padding: 15px;
+    margin: 40px;
+}
+
+.b3
+{
+    background-image: url(./icons/f1.png);
+    background-repeat:repeat;
+    
+    border: 1px solid black;
+    width: 800px;
+    height: 390px;
+    padding: 15px;
+    margin: 40px;
+}
+
+/*<!--Multiple Backgrounds-->*/
+
+/* <!--Color Transparent-->*/
+.ex1
+{
+    background-color: lightgreen;
+    border: 2px solid black;
+    padding: 15px;
+    opacity: 0.5;
+    margin-bottom: 20px;
+}
+
+.ex2
+{
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 15px;
+   
+}
+
+/* <!--Color Transparent-->*/
+
+
+/* <!--CSS Animation-->*/
+
+ /*<!--1st Part-->*/
+#hd
+{
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    margin: 20px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    from{background-color: red;}
+    to{ background-color: yellow;}
+}
+
+
+#hdd
+{
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    margin: 20px;
+    background-color: red;
+    animation-name: example1;
+    animation-duration: 4s;
+}
+
+@keyframes example1
+{
+    0%
+    {
+        background-color: red;
+    }
+
+    25%
+    {
+        background-color: yellow;
+    }
+
+    50%
+    {
+        background-color: blue;
+    }
+
+   100%
+    {
+        background-color: green;
+    }
+}
+
+#hpp
+{
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    margin: 20px;
+    background-color: red;
+    position: relative;
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes example2
+{
+    0%
+    {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25%
+    {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50%
+    {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+   100%
+    {
+        background-color: green;
+        left: 0px;
+        top: 0px;
+    }
+}
+ /* <!--CSS Animation-->*/
+
+ .container
+ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ 
+.animation-margin{
+    margin: 20px 20px;
+    padding: 10px 10px;
+    }
+
